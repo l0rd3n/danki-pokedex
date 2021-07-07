@@ -99,6 +99,9 @@ function changeVisor() {
  * @param {Element} element 
  */
 function changeCurrentPokemon(element) {
+
+    if (!canClick || currentPokemon < 0) return;
+
     if (element.hasAttribute('next')) {
         currentPokemon++;
     }
