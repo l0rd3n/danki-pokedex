@@ -110,7 +110,6 @@ function changeCurrentPokemon(element) {
     }
 
     currentPokemon = Math.min(Math.max(currentPokemon, 0), pokemonData.length - 1);
-    console.log(currentPokemon);
     changePokemon();
 }
 
