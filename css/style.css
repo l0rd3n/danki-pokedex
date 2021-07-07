@@ -156,6 +156,11 @@ html {
     z-index: 1;
 }
 
+.pokemon__info-flex {
+    display: flex;
+    flex-direction: row;
+}
+
 .pokedex__buttons {
     margin: 0 24px 32px;
 }
@@ -205,7 +210,7 @@ html {
 .pokemon__info-wrapper {
     width: 80%;
     min-height: 35px;
-    margin: 32px 24px 0;
+    margin: 32px 16px 0;
 }
 
 .pokemon__name {
@@ -234,5 +239,16 @@ html {
     }
     .pokedex__buttons {
         margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pokemon__info-flex {
+        flex-direction: column;
+    }
+
+    .pokemon__info-wrapper {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
