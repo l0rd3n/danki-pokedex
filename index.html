@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fodendo Pokedex</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section class="pokedex">
+            <header class="pokedex__header">
+                <h2>Pokedex</h2>
+            </header>
+            <div class="pokedex__body">
+                <div class="pokedex__body-container">
+                    <div class="pokedex__visor container__box">
+                        <div class="pokedex__visor-animation">
+                            <div class="anim__left"></div>
+                            <div class="anim__right"></div>
+                        </div>
+                        <img id="pokemonImage" class="pokemon__image"
+                            src=""
+                            alt="mew">
+                    </div>
+                </div>
+                <div class="pokedex__body-container">
+                    <div class="flex__column justify__between">
+                        <div class="flex__row">
+                            <div class="pokemon__info-wrapper container__box">
+                                <span id="pokemonName" class="pokemon__name hidden"></span>
+                            </div>
+                            <div class="pokemon__info-wrapper container__box">
+                                <span id="pokemonId" class="pokemon__name hidden"></span>
+                            </div>
+                        </div>
+                        <div class="pokedex__buttons flex__row justify__between">
+                            <div class="pokedex__power-btn" onclick="changeVisor()">
+                                <i class="fa fa-power-off" aria-hidden="true"></i>
+                            </div>
+                            <div class="pokedex__navgation flex__row">
+                                <div class="pokedex__nav-btn" prev onclick="changeCurrentPokemon(this)">
+                                    <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                </div>
+                                <div class="pokedex__nav-btn" next onclick="changeCurrentPokemon(this)">
+                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="pokedex__footer"></footer>
+        </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
